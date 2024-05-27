@@ -13,13 +13,15 @@ void generateSquare(int n)
 	int j = n - 1;
 
 	// One by one put all values in magic square
-	for (int num = 1; num <= n * n;) {
+	for (int num = 1; num <= n * n;)
+	{
 		if (i == -1 && j == n) // 3rd condition
 		{
 			j = n - 2;
 			i = 0;
 		}
-		else {
+		else
+		{
 			// 1st condition helper if next number
 			// goes to out of square's right side
 			if (j == n)
@@ -45,10 +47,11 @@ void generateSquare(int n)
 
 	// Print magic square
 	cout << "The Magic Square for n=" << n
-		<< ":\nSum of "
+		 << ":\nSum of "
 			"each row or column "
-		<< n * (n * n + 1) / 2 << ":\n\n";
-	for (i = 0; i < n; i++) {
+		 << n * (n * n + 1) / 2 << ":\n\n";
+	for (i = 0; i < n; i++)
+	{
 		for (j = 0; j < n; j++)
 
 			// setw(7) is used so that the matrix gets

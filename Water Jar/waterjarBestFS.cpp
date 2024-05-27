@@ -16,7 +16,7 @@ struct State
     bool operator==(const State &other) const
     {
         return a == other.a && b == other.b;
-    }
+    }   
 };
 
 struct StateHash
