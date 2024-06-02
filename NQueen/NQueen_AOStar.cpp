@@ -17,7 +17,6 @@ private:
         int h;
         int f;
         vector<Node *> children;
-
         Node(vector<int> queens, int g, int h) : queens(queens), g(g), h(h), f(g + h) {}
     };
 
